@@ -1094,7 +1094,7 @@ void Temperature::init() {
         setPwmFrequency(E0_AUTO_FAN_PIN, 1); // No prescaling. Pwm frequency = F_CPU/256/8
       #endif
     #else
-      SET_OUTPUT(E0_AUTO_FAN_PIN);
+      pinMode(E0_AUTO_FAN_PIN, OUTPUT);
     #endif
   #endif
   #if HAS_AUTO_FAN_1 && !AUTO_1_IS_0
