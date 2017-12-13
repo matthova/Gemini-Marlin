@@ -2,6 +2,51 @@ This repo is a fork of Marlin.
 
 This repo is used to store information about the Autodesk Escher Gemini 3D printer
 
+## Electronics Layout
+![Electronics Board](./Gemini_Photos/Gemini_Electronic_Layout.jpg)
+
+## Terminal Blocks
+There are 3 terminal blocks on the back of Gemini. One for each bot, and one for distributing 24V.  
+A description of how each terminal block is wired can be found in the file Gemini-Cables.xlsx
+
+## Ramps Boards
+Both Bot1 and Bot2's motors are controlled by their own dedicated microcontroller and electronics shield, known as a RAMPS board. The firmware for each of the boards is nearly identical. The firmware can be "burned" onto each board using [Arduino software](https://www.arduino.cc/). The individual configuration for Bot1 and Bot2 can be found at Marlin/Configuration_bot1.h and Marlin/Configuration/bot2.h, respectively.  
+
+To specify configuration for either Bot1 or Bot2, you will need to modify Marlin/MarlinConfig.h line 30 from 
+```
+#include "Configuration.h"
+```
+to
+```
+#include "Configuration_bot1.h"
+```
+or
+```
+#include "Configuration_bot2.h"
+```
+
+## Ramps Peripherals
+ - 24V connector
+ - USB connector
+ - Limit Switches
+ - Thermistor
+ - Extruder Stepper Driver
+ - X, Y, Z stepper motor signals
+ - Extruder and Fan pins
+
+## EStop and Collision Shutdown Switches
+
+## Raspberry Pis
+
+## Tuning X / Y offset on Bot2
+
+## Printing a .gcode file
+
+## Printing a .esh file
+
+
+## Extruder Stepper Voltage  
+The extruder stepper motors are DRV8825. They are set at approximately 0.450 volts. A video for tuning the extruder stepper motors can be found [here](https://www.youtube.com/watch?feature=player_embedded&v=89BHS9hfSUk).
 
 
 # Marlin 3D Printer Firmware
