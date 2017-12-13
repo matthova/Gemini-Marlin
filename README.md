@@ -35,9 +35,9 @@ Bot 1 Limit switch plugs: ![Bot1 Limit Switch Plugs](./Gemini_Photos/Bot_1_Limit
 Bot 2 Limit switch plugs: ![Bot2 Limit Switch Plugs](./Gemini_Photos/Bot_2_Limits.jpg)  
  - Thermistor - Each board is reading the temperature from its nozzle's heating element via a thermistor. The thermistor is plugged into the Ramps Board's T0 connector.  
 
-Bot 1 Thermistor plug: ![Bot1 Thermistor plug](./Gemini_Photos/Bot_1_thermistor.jpg)  
+Bot 1 Thermistor plug: ![Bot1 Thermistor plug](./Gemini_Photos/Bot_1_Thermistor.jpg)  
 
-Bot 2 Thermistor plug: ![Bot2 Thermistor plug](./Gemini_Photos/Bot_2_thermistor.jpg)  
+Bot 2 Thermistor plug: ![Bot2 Thermistor plug](./Gemini_Photos/Bot_2_Thermistor.jpg)  
 
  - X, Y, Z stepper motor signals - The step, enable, direction, and ground signals from each axis are sent to leadshine motor drivers in order to drive the motors. The pins are organized by a single block. Instructions on assembling this block are available [here](https://www.thingiverse.com/thing:2595024).  
  - Extruder Stepper Driver - Unlike the X, Y, and Z axes, the extruder motor is driven by the DRV8825 chip which is connected directly to the ramps board. 
